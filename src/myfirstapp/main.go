@@ -63,7 +63,7 @@ func main() {
 		small     = big >> 99
 	)
 	fmt.Println(big)
-	// big = 100 // this throws error because big is the constant.
+	// big = 100 // this throws exception because big is the constant.
 	fmt.Println(small)
 
 	// Flow Control in go. See utility.flowControl.go
@@ -71,4 +71,7 @@ func main() {
 
 	// Loops in Go. See utility.loops.go
 	utility.Looping()
+
+	// Structs, Slice and Maps. See utility.struct_slice_map.go
+	utility.StructSliceMap()
 }
