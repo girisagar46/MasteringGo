@@ -1,19 +1,19 @@
 package main
 
 import (
-	"MasteringGo/src/myfirstapp/utility"
+	utility2 "MasteringGo/src/MasteringGo/myfirstapp/utility"
 	"fmt"
 )
 
 func main() {
 	fmt.Println("Hello World!")
-	utility.SayHi()
+	utility2.SayHi()
 	//utility.sayHello() // this function is not accessible here
 
-	res, computeRes := utility.Inner()
+	res, computeRes := utility2.Inner()
 	fmt.Println(res, "", computeRes) // 3  50
 
-	inc := utility.Increment()
+	inc := utility2.Increment()
 	fmt.Println(inc(), inc(), inc()) // 1 2 3
 
 	// Variables
@@ -49,7 +49,7 @@ func main() {
 
 	myVal := 5
 	fmt.Println("myVal Before", myVal)
-	utility.ChangeMe(&myVal) // We pass the address of myVal and in the ChangeMe function, we're deferencing it
+	utility2.ChangeMe(&myVal) // We pass the address of myVal and in the ChangeMe function, we're deferencing it
 	fmt.Println("myVal After", myVal)
 
 	// type casting
@@ -67,11 +67,11 @@ func main() {
 	fmt.Println(small)
 
 	// Flow Control in go. See utility.flowControl.go
-	utility.FlowControl()
+	utility2.FlowControl()
 
 	// Loops in Go. See utility.loops.go
-	utility.Looping()
+	utility2.Looping()
 
 	// Structs, Slice and Maps. See utility.struct_slice_map.go
-	utility.StructSliceMap()
+	utility2.StructSliceMap()
 }

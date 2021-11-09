@@ -7,7 +7,7 @@ func BinarySearch(a []int, target int, lowIndex int, highIndex int) int {
 	if highIndex < lowIndex {
 		return -1
 	}
-	mid := int((lowIndex + highIndex) / 2)
+	mid := (lowIndex + highIndex) / 2
 	if a[mid] > target {
 		return BinarySearch(a, target, lowIndex, mid)
 	} else if a[mid] < target {
